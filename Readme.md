@@ -1,7 +1,8 @@
 # Личный проект «Девайс»
 
 * Студент: [Ksusha Zhukova](https://up.htmlacademy.ru/htmlcss/23/user/226838).
-* Наставник: Денис Быков.
+* Наставник: [Денис Быков]
+(https://htmlacademy.ru/profile/id66426).
 
 ---
 
