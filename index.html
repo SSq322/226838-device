@@ -10,7 +10,7 @@
     <header class="main-header">
         <nav class="header-navigation">
             <a class="main-header-logo">
-                <img src="img/logo.svg" width="164px" height="36px" alt="Логотип магазина Device" width="192" height="38">
+                <img src="img/logo.svg" width="164" height="36" alt="Логотип магазина Device" width="192" height="38">
             </a>
             <ul class="user-navigation">
                 <label for="header_search">Поиск по сайту</label>
@@ -42,9 +42,14 @@
         <!--Slider-->
         <section class="featured-products">
             <h2 class="visually-hidden">Лучшие предложения</h2>
+            <ul class="slides_switches">
+                <li class="slide_radio"><button class="slides_btn">Первый слайд</button></li>
+                <li class="slide_radio"><button class="slides_btn">Второй слайд</button></li>
+                <li class="slide_radio"><button class="slides_btn">Третий слайд</button></li>
+            </ul>
             <ul class="featured-slides">
                 <li class="slider-1">
-                    <img class="slider-image" width="384px" height="486px" src="img/slider-1-png.png" alt="Палка для селфи">
+                    <img class="slider-image" width="384" height="486" src="img/slider-1.png" alt="Палка для селфи">
                     <div class="featured-description">
                         <p>Делай селфи, как Бен Стилер!</p>
                         <p>Самая длинная палка для селфи доступна в нашем магазине. Восемь (Восемь, Карл!) метров длиной и весом всего 5 килограмм
@@ -67,7 +72,7 @@
                     </div>
                 </li>
                 <li class="slider-2">
-                    <img class="slider-image" height="485" width="345" src="img/slider-2-png.png" alt="Фитнес часы">
+                    <img class="slider-image" height="485" width="345" src="img/slider-2.png" alt="Фитнес часы">
                     <div class="featured-description">
                         <p>Худеем правильно!</p>
                         <p>Мотивирующие фитнес-браслеты помогут найти в себе силы не пропускать занятия и соблюдать диету.</p>
@@ -81,7 +86,7 @@
                     </div>
                 </li>
                 <li class="slider-3">
-                    <img class="slider-image" src="img/slider-3-png.png" height="334" width="526" alt="Квадракоптер">
+                    <img class="slider-image" src="img/slider-3.png" height="334" width="526" alt="Квадракоптер">
                     <div class="featured-description">
                         <p>Порхает как бабочка, жалит как пчела!</p>
                         <p> Этот обычный, на первый взгляд, квадрокоптер оснащен мощным лазером, замаскированным под обычную камеру.
@@ -107,37 +112,37 @@
             <ul class="categories-list">
                 <li class="categores-list-features">
                     <a href="#">
-                        <img src="img/popular-1.svg" width="160px" height="160px" alt="Шлем виртуальной реальности">
+                        <img src="img/popular-1.svg" width="160" height="160" alt="Шлем виртуальной реальности">
                         <span class="categories-list-feature">Виртуальная реальность</span>
                     </a>
                 </li>
                 <li class="categores-list-features">
                     <a href="#">
-                        <img src="img/popular-2.svg" width="160px" height="160px" alt="Монопод для селфи">
+                        <img src="img/popular-2.svg" width="160" height="160" alt="Монопод для селфи">
                         <span class="categories-list-feature">Моноподы для селфи</span>
                     </a>
                 </li>
                 <li class="categores-list-features">
                     <a href="#">
-                        <img src="img/popular-3.svg" width="160px" height="160px" alt="Экшн-камера">
+                        <img src="img/popular-3.svg" width="160" height="160" alt="Экшн-камера">
                         <span class="categories-list-feature">Экшн-камеры</span>
                     </a>
                 </li>
                 <li class="categores-list-features">
                     <a href="#">
-                        <img src="img/popular-4.svg" width="160px" height="160px" alt="Фитнес-браслет">
+                        <img src="img/popular-4.svg" width="160" height="160" alt="Фитнес-браслет">
                         <span class="categories-list-feature">Фитнес-браслеты</span>
                     </a>
                 </li>
                 <li class="categores-list-features">
                     <a href="#">
-                        <img src="img/popular-5.svg" width="160px" height="160px" alt="Умные часы">
+                        <img src="img/popular-5.svg" width="160" height="160" alt="Умные часы">
                         <span class="categories-list-feature">Умные часы</span>
                     </a>
                 </li>
                 <li class="categores-list-features">
                     <a href="#">
-                        <img src="img/popular-6.svg" width="160px" height="160px" alt="Квадракоптер">
+                        <img src="img/popular-6.svg" width="160" height="160" alt="Квадракоптер">
                         <span class="categories-list-feature">Квадракоптеры</span>
                     </a>
                 </li>
@@ -177,12 +182,20 @@
         </section>
 
         <section class="featured-companies">
-            <h2 class="visually-hidden">Партнеры магазина</h2>
+            <h2 class="visually-hidden">Бренды, представленные в магазине</h2>
             <ul class="companies-list">
-                <li><img src="img/logo-1-jpg.png" width="260px" height="100px" alt="Партнер Device DJI"></li>
-                <li><img src="img/logo-2-jpg.png" width="260px" height="100px" alt="Партнер Device SP ADJETS"></li>
-                <li><img src="img/logo-3-jpg.png" width="260px" height="100px" alt="Партнер Device GOPRO"></li>
-                <li><img src="img/logo-4-jpg.png" width="260px" height="100px" alt="Партнер Device VIVE"></li>
+                <a href="#">
+                    <li><img src="img/logo-1.png" width="260" height="100" alt="Перейти в каталог бренда DJI"></li>
+                </a>
+                <a href="#">
+                    <li><img src="img/logo-2.png" width="260" height="100" alt="Перейти в каталог бренда SP ADJETS"></li>
+                </a>
+                <a href="#">
+                    <li><img src="img/logo-3.png" width="260" height="100" alt="Перейти в каталог бренда GOPRO"></li>
+                </a>
+                <a href="#">
+                    <li><img src="img/logo-4.png" width="260" height="100" alt="Перейти в каталог бренда VIVE"></li>
+                </a>
             </ul>
         </section>
 
@@ -202,7 +215,7 @@
         <section class="contacts">
             <h2>Контакты</h2>
             <p>Вы можете забрать товар сами, заехав в наш офис. Заодно, вы сможете проверить работоспособность покупки. Всякое бывает.</p>
-            <img src="img/map-jpg.jpg" width="560px" height="222px" alt="Офис компании по адресу г. Москва, ул. Строителей дом 15">
+            <img src="img/map-jpg.jpg" width="560" height="222" alt="Офис компании по адресу г. Москва, ул. Строителей дом 15">
             <button class="button" type="button">Напишите нам</button>
             <!-- Форма -->
             <form class="feedback-form" method="post">
@@ -222,7 +235,7 @@
 
     <footer class=" main-footer ">
         <div class="footer-navigation ">
-            <a href="# "><img src="img/logo_4.svg" width="164px" height="36px" alt="Логотип магазина Device "></a>
+            <a href="# "><img src="img/logo_4.svg" width="164" height="36" alt="Логотип магазина Device "></a>
             <ul class="footer-user-nav ">
                 <li><a href="# ">Войти</a></li>
                 <li><a href="# ">Сравнить</a></li>
