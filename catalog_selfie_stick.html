@@ -39,11 +39,12 @@
     <main class="container">
         <h1 class="visually-hidden">Моноподы для селфи</h1>
         <ul class="breadcrumbs" aria-label="Навигация по сайту">
-            <!-- Это правильно? -->
+            <h2 class="visually-hidden">Поиск по сайту</h2>
             <li class="breadcrumbs-step" aria-label="Вернуться на Главную страницу"><a href="index.html">Главная</a></li>
             <li class="breadcrumbs-step" aria-label="Вернуться в каталог товаров"><a href="catalog.html">Каталог товаров</a></li>
             <li class="breadcrumbs-last" aria-label="Сейчас вы на странице Моноподы для селфи">Моноподы для селфи</li>
         </ul>
+        <!-- Форма -->
         <section class="filters">
             <h2>Фильтр</h2>
             <form class="filter" method="get">
@@ -73,17 +74,20 @@
         </section>
         <section class="sorting">
             <h2>Сортировка:</h2>
-            <form action="get">
-                <label><input type="radio" value="price">По цене</label>
-                <label><input type="radio" value="type">По типу</label>
-                <label><input type="radio" value="popularity">По популярности</label>
-            </form>
+            <a href="#">По цене</a>
+            <a href="#">По типу</a>
+            <a href="#">По популярности</a>
+            <div>
+                <a href="#">Вверх</a>
+                <a href="#">Вниз</a>
+            </div>
         </section>
+        <!-- Форма -->
         <section class="catalog">
             <h2 class="visually-hidden">Список селфи-палок</h2>
             <ul class="catalog-list">
                 <li class="catalog-item">
-                    <img src="img/item-1-jpg.png" width="360px" height="380px" alt="Любительская селфи-палка">
+                    <img src="img/item-1.png" width="360" height="380" alt="Любительская селфи-палка">
                     <a href="catalog-item.html">
                         <h3>Любительская селфи-палка</h3>
                     </a>
@@ -92,7 +96,7 @@
                     <button class="add-to-comparison">Добавить к сравнению</button>
                 </li>
                 <li class="catalog-item">
-                    <img src="img/item-2-jpg.png" width="360px" height="380px" alt="Профессиональная селфи-палка">
+                    <img src="img/item-2.png" width="360" height="380" alt="Профессиональная селфи-палка">
                     <a href="catalog-item.html">
                         <h3>Профессиональная селфи-палка</h3>
                     </a>
@@ -101,7 +105,7 @@
                     <button class="add-to-comparison">Добавить к сравнению</button>
                 </li>
                 <li class="catalog-item">
-                    <img src="img/item-3-jpg.png" width="360px" height="380px" alt="Непотопляемая селфи-палка">
+                    <img src="img/item-3.png" width="360" height="380" alt="Непотопляемая селфи-палка">
                     <a href="catalog-item.html">
                         <h3>Непотопляемая селфи-палка</h3>
                     </a>
@@ -111,7 +115,7 @@
 
                 </li>
                 <li class="catalog-item">
-                    <img src="img/item-4-jpg.png" width="360px" height="380px" alt="Селфи-палка 'Следуй за мной'">
+                    <img src="img/item-4.png" width="360" height="380" alt="Селфи-палка 'Следуй за мной'">
                     <a href="catalog-item.html">
                         <h3>Селфи-палка"Следуй за мной"</h3>
                     </a>
@@ -131,7 +135,7 @@
     </main>
     <footer class="main-footer">
         <div class="footer-navigation">
-            <a href="index.html"><img src="img/logo_4.svg" width="164px" height="36px" alt="Логотип Device"></a>
+            <a href="index.html"><img src="img/logo_4.svg" width="164" height="36" alt="Логотип Device"></a>
             <ul class="footer-user-nav">
                 <li><a class="user-profile">Валентин Петухов</a></li>
                 <li class="logout-link"><a href="#">Выйти</a></li>
