@@ -1,0 +1,413 @@
+@font-face {
+    font-family: Gilroy-ExtraBold;
+    src: url("/font/Gilroyextrabold.woff2") format("woff2"), url("/font/Gilroyextrabold.woff") format("woff");
+}
+
+@font-face {
+    font-family: Gilroy-Light;
+    src: url("/font/Gilroylight.woff2") format("woff2"), url("/font/Gilroylight.woff") format("woff");
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #ffffff;
+    font-size: 18px;
+    line-height: 24px;
+    color: #000000;
+    text-align: left;
+    font-family: Gilroy-ExtraBold, "Arial", sans-serif;
+}
+
+a {
+    text-decoration: none;
+}
+
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0px;
+    padding: 0px;
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+}
+
+
+/* header */
+
+.services-navigation,
+.user-navigation,
+.products-navigation {
+    list-style: none;
+}
+
+.user-navigation,
+.user-navigation-link a {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 15px;
+    line-height: 2;
+    letter-spacing: 0.2px;
+    color: #000000;
+}
+
+.user-navigation-search [type="search"] {
+    color: rgba(0, 0, 0, 0.3);
+    background-color: transparent;
+    border: 0px solid;
+}
+
+.services-navigation a,
+.full-catalog-button {
+    line-height: 1.33;
+    font-size: 18px;
+    font-weight: 800;
+    color: #000000;
+    letter-spacing: 3.6px;
+    text-transform: uppercase;
+}
+
+.products-navigation a {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 15px;
+    line-height: 2.4;
+    letter-spacing: 0.2px;
+    color: #000000;
+}
+
+.services-navigation a:hover,
+.user-navigation a:hover,
+.products-navigation a:hover,
+.full-catalog-button:hover {
+    color: rgba(0, 0, 0, 0.6);
+}
+
+.services-navigation a:focus,
+.user-navigation a:focus,
+.products-navigation a:focus,
+.full-catalog-button:focus {
+    color: rgba(0, 0, 0, 0.3)
+}
+
+.user-navigation-search [type="search"]:hover {
+    color: rgba(0, 0, 0, 0.6);
+}
+
+.user-navigation-search [type="search"]:focus {
+    color: #000000;
+}
+
+
+/* button */
+
+.device-button {
+    position: relative;
+    display: inline-block;
+    padding-top: 9px;
+    padding-right: 5px;
+    padding-bottom: 9px;
+    padding-left: 5px;
+    font-size: 18px;
+    vertical-align: top;
+    text-align: center;
+    color: #000000;
+    text-transform: uppercase;
+    text-decoration: none;
+    letter-spacing: 3.6px;
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+.device-button:active {
+    color: rgba(0, 0, 0, 0.3);
+}
+
+.device-button::before {
+    content: "";
+    position: absolute;
+    top: 40%;
+    left: 0;
+    z-index: -1;
+    width: 100%;
+    height: 20%;
+    background-color: #f0c52e;
+    transition: all 0.2s ease-in-out;
+}
+
+.device-button:hover::before {
+    top: 0;
+    height: 100%;
+}
+
+
+/* main */
+
+.featured-slides {
+    list-style-type: none;
+}
+
+.featured-description p:first-of-type {
+    line-height: 56px;
+    max-width: 406px;
+    font-size: 48px;
+    letter-spacing: 0.48px;
+}
+
+.featured-description p:last-of-type {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 15px;
+    letter-spacing: 0.15px;
+    color: #464646;
+    line-height: 2;
+    letter-spacing: 0.2px;
+}
+
+.featured-description-1 {
+    max-width: 480px;
+}
+
+.featured-description-2 {
+    max-width: 460px;
+}
+
+.featured-description-3 {
+    max-width: 440px;
+}
+
+.featured-advances td {
+    font-family: Gilroy-Light, sans-serif;
+    font-weight: 300;
+    font-size: 36px;
+    line-height: 1.33;
+    letter-spacing: 0.4px;
+}
+
+.featured-advances th {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 13px;
+    line-height: 1.54;
+    letter-spacing: 0.1px;
+    color: #464646;
+}
+
+.categories-list {
+    list-style-type: none;
+}
+
+.categories-list img {
+    background-color: rgba(240, 197, 46, 0.5);
+    width: 160px;
+    height: 160px;
+    ;
+}
+
+.services-description {
+    list-style-type: none;
+}
+
+.services-description h2 {
+    font-size: 47.5px;
+    line-height: 1;
+    letter-spacing: 0.5px;
+    color: #000000;
+}
+
+.services-description p {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 15px;
+    line-height: 2;
+    letter-spacing: 0.2px;
+    text-align: left;
+    color: #464646;
+    max-width: 450px;
+}
+
+.companies-list {
+    list-style-type: none;
+}
+
+
+/* about us  and contacts */
+
+.about-us h2,
+.contacts h2 {
+    font-size: 47.5px;
+    line-height: 1;
+    letter-spacing: 0.5px;
+    color: #000000;
+}
+
+.about-us p,
+.contacts p {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 15px;
+    line-height: 2;
+    color: #464646;
+    max-width: 473px;
+}
+
+.contacts p {
+    max-width: 508px;
+}
+
+.shipping-companies {
+    font-size: 16px;
+    line-height: 2.5;
+    color: #000000;
+    list-style-type: disc;
+}
+
+
+/* footer */
+
+.main-footer {
+    background-color: #464646;
+}
+
+.footer-user-nav {
+    list-style-type: none;
+}
+
+.footer-user-nav a {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 15px;
+    line-height: 2.4;
+    letter-spacing: 0.2px;
+    color: rgba(255, 255, 255, 0.7);
+}
+
+.footer-user-nav a:hover {
+    color: #ffffff;
+}
+
+.footer-user-nav a:focus {
+    color: rgba(255, 255, 255, 0.3);
+}
+
+.footer-website-nav p {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 15px;
+    line-height: 2;
+    text-align: left;
+    color: #ffffff;
+}
+
+.footer-website-nav p:last-of-type {
+    text-align: right;
+}
+
+.footer-contacts {
+    list-style-type: none;
+    font-size: 18px;
+    line-height: 1.33;
+    letter-spacing: 3.6px;
+    text-transform: uppercase;
+}
+
+.footer-contacts a {
+    color: #ffffff;
+}
+
+.social-buttons {
+    list-style-type: none;
+}
+
+.feedback-form {
+    font-size: 17.5px;
+    line-height: 1.4;
+    color: #000000;
+}
+
+.feedback-form [type="text"],
+.feedback-form [type="email"],
+.feedback-form textarea {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 14px;
+    line-height: 1.25;
+    color: rgba(70, 70, 70, 0.4);
+}
+
+.footer_navigation_logo:hover {
+    opacity: 0.8;
+}
+
+.footer_navigation_logo:focus {
+    opacity: 0.4;
+}
+
+
+/*  catalog selfie stick css */
+
+.breadcrumbs {
+    list-style-type: none;
+}
+
+.breadcrumbs a,
+.breadcrumbs-last {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.1px;
+    color: rgba(0, 0, 0, 0.3);
+}
+
+.filters h2,
+.sorting h2 {
+    font-size: 17.5px;
+    line-height: 1.4;
+    letter-spacing: 3.5px;
+}
+
+.filters legend {
+    font-size: 18px;
+    line-height: 1.33;
+    letter-spacing: 0.2px;
+}
+
+.filter fieldset {
+    border: none;
+}
+
+.filter_list {
+    list-style-type: none;
+}
+
+.filter_list label {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 14px;
+    line-height: 2.86;
+    letter-spacing: 0.1px;
+}
+
+.sorting a {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 14px;
+    line-height: 1.25;
+    color: rgba(0, 0, 0, 0.3);
+}
+
+.sorting a:focus {
+    color: #000000;
+}
+
+.catalog-list {
+    list-style-type: none;
+}
+
+.catalog-item h3 {
+    font-size: 18px;
+    line-height: 1.33;
+    letter-spacing: 0.2px;
+    color: #000000;
+}
+
+.catalog-item span {
+    font-family: Gilroy-Light, "Arial", sans-serif;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.2px;
+    text-align: right;
+    color: #464646;
+}
