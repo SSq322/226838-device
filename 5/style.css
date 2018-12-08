@@ -203,12 +203,19 @@ a {
     ;
 }
 
+.categores-list-features span {
+    font-size: 18px;
+    line-height: 1.33;
+    letter-spacing: 0.2px;
+    color: #000000;
+}
+
 .services-description {
     list-style-type: none;
 }
 
 .services-description h2 {
-    font-size: 47.5px;
+    font-size: 47px;
     line-height: 1;
     letter-spacing: 0.5px;
     color: #000000;
@@ -316,7 +323,7 @@ a {
 
 .feedback-form {
     font-size: 17.5px;
-    line-height: 1.4;
+    line-height: 24px;
     color: #000000;
 }
 
@@ -388,6 +395,12 @@ a {
     color: rgba(0, 0, 0, 0.3);
 }
 
+.sorting h2 {
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 3.2px;
+}
+
 .sorting a:focus {
     color: #000000;
 }
@@ -410,4 +423,41 @@ a {
     letter-spacing: 0.2px;
     text-align: right;
     color: #464646;
+}
+
+.add-to-comparison {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 13px;
+    line-height: 2.77;
+    letter-spacing: 0.1px;
+    text-align: center;
+    color: rgba(0, 0, 0, 0.5);
+    border: none;
+    cursor: pointer;
+}
+
+
+/* pagination */
+
+.pagination-list {
+    list-style-type: none;
+    background-color: rgb(236, 236, 236)
+}
+
+.pagination-direction a {
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 3.2px;
+    color: #000000;
+}
+
+.pagination-item a {
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 3.2px;
+    color: rgba(0, 0, 0, 0.3);
+}
+
+.pagination-item-current a {
+    color: #000000;
 }
