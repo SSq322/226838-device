@@ -10,28 +10,39 @@
 </head>
 
 <body>
-    <header class="main-header">
+    <header class="main-header-1">
         <nav class="header-navigation">
-            <a href="index.html" class="main-header-logo">
+            <a class="main-header-logo">
                 <img src="img/logo.svg" alt="Логотип магазина Device" width="163" height="36">
             </a>
             <div class="user-navigation">
                 <div class="user-navigation-search">
                     <form action="get">
-                        <label for="header-search">
+                        <label for="header-search" class="header-search">
             <input id="header-search" type="search" value="Поиск по сайту"></label>
                     </form>
                 </div>
                 <ul class="user-navigation-list">
                     <li class="user-navigation-link"><a href="#" class="user-profile">Войти</a></li>
-                    <li class="user-navigation-link"><a href="#">Сравнить</a></li>
-                    <li class="user-navigation-link"><a href="#">Корзина</a></li>
+                    <li class="user-navigation-link"><a href="#" class="user-navigation-compare">Сравнить</a></li>
+                    <li class="user-navigation-link"><a href="#" class="user-navigation-cart">Корзина</a></li>
                 </ul>
             </div>
             <div class="pre-catalog-wrap">
                 <div class="items-catalog-wrap">
                     <label for="full-catalog">Каталог товаров</label>
-                    <input id="full-catalog" name="header-catalog" type="checkbox"></input>
+                    <input id="full-catalog" name="header-catalog" type="checkbox">
+                    </input>
+                    <div class="products-navigation-wrap">
+                        <ul class="products-navigation">
+                            <li><a href="#">Виртуальная реальность</a></li>
+                            <li><a href="#">Моноподы для селфи</a></li>
+                            <li><a href="#">Экшн-камеры</a></li>
+                            <li><a href="#">Фитнес-браслеты</a></li>
+                            <li><a href="#">Умные часы</a></li>
+                            <li><a href="#">Квадракоптеры</a></li>
+                        </ul>
+                    </div>
                 </div>
                 <div class="services-navigation-wrap">
                     <ul class="services-navigation">
@@ -41,14 +52,6 @@
                     </ul>
                 </div>
             </div>
-            <ul class="products-navigation visually-hidden">
-                <li><a href="#">Виртуальная реальность</a></li>
-                <li><a href="#">Моноподы для селфи</a></li>
-                <li><a href="#">Экшн-камеры</a></li>
-                <li><a href="#">Фитнес-браслеты</a></li>
-                <li><a href="#">Умные часы</a></li>
-                <li><a href="#">Квадракоптеры</a></li>
-            </ul>
         </nav>
     </header>
 
@@ -65,8 +68,8 @@
                         <p class="featured-description-1">Самая длинная палка для селфи доступна в нашем магазине. Восемь (Восемь, Карл!) метров длиной и весом всего 5 килограмм
                         </p>
                         <div class="button-radio-wrap">
-                            <a class="device-button" href="#">Подробнее</a>
-                            <ul class="slides-switches">
+                            <a class="device-button device-button-220" href="#">Подробнее</a>
+                            <ul class="slides-switches visually-hidden">
                                 <li class="slide-radio"><button class="slides-btn">Первый слайд</button></li>
                                 <li class="slide-radio"><button class="slides-btn">Второй слайд</button></li>
                                 <li class="slide-radio"><button class="slides-btn">Третий слайд</button></li>
@@ -185,35 +188,34 @@
         </section>
 
         <section class="services-information">
-            <h2 class="visually-hidden">Сервисы</h2>
-            <ul class="services-features">
-                <li>
-                    <label class="device-button">Доставка</label>
-                    <input type="radio" name="advances-shipping" value="shipping">
-                </li>
-                <li>
-                    <label class="device-button">Гарантия</label>
-                    <input type="radio" name="advances-shipping" value="warranty">
-                </li>
-                <li>
-                    <label class="device-button">Кредит</label>
-                    <input type="radio" name="advances-shipping" value="loan">
-                </li>
-            </ul>
-            <ul class="services-description">
-                <li>
-                    <h2>Доставка</h2>
-                    <p>Мы с удовольствием доставим ваш товар прямо к вашему подъезду совершенно бесплатно! Ведь мы неплохо заработаем, поднимая его на ваш этаж.</p>
-                </li>
-                <li class="visually-hidden">
-                    <h2>Гарантия</h2>
-                    <p>Если из-за возгорания купленного у нас товара у вас сгорит дом - не переживайте, мы выдадим вам новый. <br>Товар, не дом, конечно же.</p>
-                </li>
-                <li class="visually-hidden">
-                    <h2>Кредит</h2>
-                    <p>Залезть в долговую яму стало проще! Кредитные консультанты подберут для вас наиболее выгодные условия кредита. Выгодные для нашего банка, разумеется.</p>
-                </li>
-            </ul>
+            <div class="services-information-wrap">
+                <h2 class="visually-hidden">Сервисы</h2>
+                <ul class="services-features">
+                    <li>
+                        <button class="device-button-advances">Доставка</button>
+                    </li>
+                    <li>
+                        <button class="device-button-advances">Гарантия</button>
+                    </li>
+                    <li>
+                        <button class="device-button-advances">Кредит</button>
+                    </li>
+                </ul>
+                <ul class="services-description">
+                    <li>
+                        <h2>Доставка</h2>
+                        <p>Мы с удовольствием доставим ваш товар прямо к вашему подъезду совершенно бесплатно! Ведь мы неплохо заработаем, поднимая его на ваш этаж.</p>
+                    </li>
+                    <li class="visually-hidden">
+                        <h2>Гарантия</h2>
+                        <p>Если из-за возгорания купленного у нас товара у вас сгорит дом - не переживайте, мы выдадим вам новый. <br>Товар, не дом, конечно же.</p>
+                    </li>
+                    <li class="visually-hidden">
+                        <h2>Кредит</h2>
+                        <p>Залезть в долговую яму стало проще! Кредитные консультанты подберут для вас наиболее выгодные условия кредита. Выгодные для нашего банка, разумеется.</p>
+                    </li>
+                </ul>
+            </div>
         </section>
 
         <section class="featured-companies">
@@ -244,14 +246,14 @@
                     <li>Автотрейдинг</li>
                     <li>ЖелДорЭкспедиция</li>
                 </ul>
-                <a class="device-button" href="#">Подробнее о нас</a>
+                <a class="device-button device-button-260" href="#">Подробнее о нас</a>
             </section>
 
             <section class="contacts">
                 <h2>Контакты</h2>
                 <p>Вы можете забрать товар сами, заехав в наш офис. Заодно, вы сможете проверить работоспособность покупки. Всякое бывает.</p>
                 <img src="img/map-jpg.jpg" width="560" height="222" alt="Офис компании по адресу г. Москва, ул. Строителей дом 15">
-                <button class="device-button" type="submit">Напишите нам</button>
+                <button class="device-button device-button-260" type="submit">Напишите нам</button>
             </section>
         </div>
 
@@ -262,9 +264,9 @@
             <div class="footer-navigation">
                 <a class="footer-navigation-logo" href="#"><img class="footer-navigation-logo" src="img/logo-4.svg" width="164" height="36" alt="Логотип магазина Device "></a>
                 <ul class="footer-user-nav">
-                    <li><a class="user-profile">Войти</a></li>
-                    <li><a href="#">Сравнить</a></li>
-                    <li><a href="#">Корзина</a></li>
+                    <li><a class="footer-user-profile">Войти</a></li>
+                    <li><a href="#" class="footer-user-navigation-compare">Сравнить</a></li>
+                    <li><a href="#" class="footer-user-navigation-cart">Корзина</a></li>
                 </ul>
             </div>
             <div class="footer-website-nav">
@@ -280,7 +282,7 @@
             </div>
 
             <div class="footer-social">
-                <div class=""></div>
+                <div class="footer-social-border"></div>
                 <ul class="social-buttons">
                     <li><a class="social-button-1" href="#"><span class="visually-hidden">Facebook</span></a></li>
                     <li><a class="social-button-2" href="#"><span class="visually-hidden">Instagram</span></a></li>
@@ -292,7 +294,7 @@
         </div>
     </footer>
 
-    <section class="modal modal-feedback">
+    <section class="modal modal-feedback visually-hidden">
         <h2 class="visually-hidden ">Обратная связь</h2>
         <form class="feedback-form" method="post">
             <button type="button" class="modal-close">Закрыть</button>
