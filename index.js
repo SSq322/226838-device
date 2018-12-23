@@ -23,42 +23,38 @@ const slides = document.querySelectorAll(".featured-slides .slide")
 
 const updateClasses = (list, slideIndexToDisplay) => {
     list.forEach((slide, slideIndex) => {
-        // if (slideIndex === slideIndexToDisplay) {
-        //     slide.classList.add("current");
-        // } else {
-        //     slide.classList.remove("current");
-
-        // }
         if (slideIndex === slideIndexToDisplay) {
             slide.classList.add("current");
-            slide.classList.remove("hidden")
-            list.forEach((slide, slideIndex) => {
-                if (slideIndex != slideIndexToDisplay) {
-                    slide.classList.add("hidden");
-                }
-            });
-
         } else {
-
             slide.classList.remove("current");
-
-        }
+        };
     })
-}
-const updateSwitcher = (list, switchIndexToDisplay) => {
-    list.forEach((switcher, switchIndex) => {
-        if (switchIndex === switchIndexToDisplay) {
-            switcher.classList.add("switch-current");
-        } else {
-            switcher.classList.remove("switch-current");
-
-        }
-    });
 }
 
 sliderSwitches.forEach((button, index) => {
     button.addEventListener("click", () => {
         updateClasses(slides, index);
-        updateSwitcher(sliderSwitches, index)
+        updateClasses(sliderSwitches, index)
     });
-})
+});
+
+// advances slider
+const advances = document.querySelectorAll(".device-button-advances")
+const advancesSlides = document.querySelectorAll(".services-description-slide")
+
+const updateSlider = (list, slideIndexToDisplay) => {
+    list.forEach((slide, slideIndex) => {
+        if (slideIndex === slideIndexToDisplay) {
+            slide.classList.add("advances-current");
+        } else {
+            slide.classList.remove("advances-current");
+        };
+    })
+}
+
+advances.forEach((button, index) => {
+    button.addEventListener("click", () => {
+        updateSlider(advances, index);
+        updateSlider(advancesSlides, index)
+    });
+});
