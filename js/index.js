@@ -1,19 +1,27 @@
 // modal open-close
 
+
 const open_modal = document.getElementById("modal-contaxt-us-button");
 const feedback_modal = document.querySelector(".modal-feedback");
 const modal_close = document.querySelector(".modal-close")
 
-open_modal.addEventListener('click', () => feedback_modal.classList.toggle("hidden"))
-modal_close.addEventListener('click', () => feedback_modal.classList.toggle("hidden"))
+if (open_modal) {
+    open_modal.addEventListener('click', () => feedback_modal.classList.toggle("hidden"));
+    modal_close.addEventListener('click', () => feedback_modal.classList.toggle("hidden"))
+}
+
 
 // modal image
 modal_window_map = document.querySelector(".modal-map")
 contacts_image = document.querySelector(".image-in-modal")
 modal_map_close = document.querySelector(".modal-map-close")
 
-contacts_image.addEventListener("click", () => modal_window_map.classList.toggle("hidden"))
-modal_map_close.addEventListener("click", () => modal_window_map.classList.toggle("hidden"))
+if (contacts_image) {
+    contacts_image.addEventListener("click", () => modal_window_map.classList.toggle("hidden"))
+    modal_map_close.addEventListener("click", () => modal_window_map.classList.toggle("hidden"))
+}
+
+
 
 
 // slider controllers
