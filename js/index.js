@@ -1,15 +1,27 @@
 // modal open-close
 
-
 const open_modal = document.getElementById("modal-contaxt-us-button");
 const feedback_modal = document.querySelector(".modal-feedback");
 const modal_close = document.querySelector(".modal-close")
+const form = document.querySelector(".feedback-form")
+
+const name = document.getElementById("name")
+const email = document.getElementById("email")
+const text = document.getElementById("input-text")
+const popup = document.querySelector(".modal-feedback-content")
+
 
 if (open_modal) {
-    open_modal.addEventListener('click', () => feedback_modal.classList.toggle("hidden"));
-    modal_close.addEventListener('click', () => feedback_modal.classList.toggle("hidden"))
+    open_modal.addEventListener("click", () => feedback_modal.classList.toggle("hidden"));
+    modal_close.addEventListener("click", () => feedback_modal.classList.toggle("hidden"))
 }
 
+form.addEventListener("submit", function(evt) {
+    if (!name.value || !email.value || !text.value) {
+        evt.preventDefault();
+        popup.classList.add("modal-error");
+    }
+});
 
 // modal image
 modal_window_map = document.querySelector(".modal-map")

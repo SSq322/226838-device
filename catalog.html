@@ -33,12 +33,12 @@
             </div>
             <div class="pre-catalog-wrap">
                 <div class="items-catalog-wrap">
+                    <input class="items-full-catalog visually-hidden" id="full-catalog" name="header-catalog" type="checkbox">
                     <label for="full-catalog">Каталог товаров</label>
-                    <input id="full-catalog" name="header-catalog" type="checkbox">
                     <div class="products-navigation-wrap">
                         <ul class="products-navigation">
                             <li><a href="#">Виртуальная реальность</a></li>
-                            <li><a href="catalog_selfie_stick.html">Моноподы для селфи</a></li>
+                            <li><a href="catalog.html">Моноподы для селфи</a></li>
                             <li><a href="#">Экшн-камеры</a></li>
                             <li><a href="#">Фитнес-браслеты</a></li>
                             <li><a href="#">Умные часы</a></li>
@@ -67,6 +67,7 @@
             <li class="breadcrumbs-last" aria-label="Сейчас вы на странице Моноподы для селфи">Моноподы для селфи</li>
         </ul>
         <section class="sorting">
+
             <div class="filter-wrap">
                 <div class="filter-header-wrap">
                     <h2>Фильтр: </h2>
@@ -88,7 +89,7 @@
         </section>
         <div class="main-container">
             <form class="filter" method="get" action="https://echo.htmlacademy.ru">
-                <h2 class="visually-hidden">Сортировка товаров</h2>
+                <h2 class="visually-hidden">Фильтровать товары</h2>
                 <div class="filter-range-wrap">
                     <p>Стоимость</p>
                     <div class="filter-range"></div>
@@ -103,26 +104,26 @@
                     <legend>Цвет</legend>
                     <ul class="filter-list">
                         <li class="filter-list-choice">
-                            <input type="checkbox" id="black" checked name="Black">
+                            <input type="checkbox" id="black" checked name="Black" class="visually-hidden">
                             <label class="filter-color-choice" for="black">Черный</label>
                         </li>
                         <li class="filter-list-choice">
-                            <input type="checkbox" id="white" name="White">
+                            <input type="checkbox" id="white" name="White" class="visually-hidden">
                             <label class="filter-color-choice" for="white">Белый</label>
 
                         </li>
                         <li class="filter-list-choice">
-                            <input type="checkbox" id="blue" checked name="Blue">
+                            <input type="checkbox" id="blue" checked name="Blue" class="visually-hidden">
                             <label class="filter-color-choice" for="blue">Синий</label>
 
                         </li>
                         <li class="filter-list-choice">
-                            <input type="checkbox" id="red" checked name="Red">
+                            <input type="checkbox" id="red" checked name="Red" class="visually-hidden">
                             <label class="filter-color-choice" for="red">Красный</label>
 
                         </li>
                         <li class="filter-list-choice">
-                            <input type="checkbox" id="pink" name="Pink">
+                            <input type="checkbox" id="pink" name="Pink" class="visually-hidden">
                             <label class="filter-color-choice" for="pink">Розовый</label>
 
                         </li>
@@ -132,12 +133,12 @@
                     <legend>Bluetooth</legend>
                     <ul class="filter-list">
                         <li class="filter-list-choice">
-                            <input type="radio" name="bluetooth-presense" id="yes" value="Yes" checked>
+                            <input type="checkbox" name="bluetooth-presense" id="yes" value="Yes" class="visually-hidden" checked>
                             <label class="filter-list-presence" for="yes">Есть</label>
 
                         </li>
                         <li class="filter-list-choice">
-                            <input type="radio" name="bluetooth-presense" id="no" value="No">
+                            <input type="checkbox" name="bluetooth-presense" id="no" value="No" class="visually-hidden">
                             <label class="filter-list-presence" for="no">Нет</label>
 
                         </li>
@@ -226,10 +227,10 @@
         </div>
 
     </main>
-    <footer class=" main-footer">
+    <footer class="main-footer">
         <div class="footer-container">
             <div class="footer-navigation">
-                <a class="footer-navigation-logo" href="#"><img class="footer-navigation-logo" src="img/logo-4.svg" width="164" height="36" alt="Логотип магазина Device "></a>
+                <a class="footer-navigation-logo" href="#"><img class="footer-navigation-logo" src="img/logo-4.svg" width="164" height="36" alt="Логотип магазина Device"></a>
                 <ul class="footer-user-nav">
                     <li><a class="logged footer-user-profile">Валентин Петухов</a></li>
                     <li class="logout-link"><a href="#">Выйти</a></li>
