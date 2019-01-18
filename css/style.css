@@ -570,6 +570,7 @@ a {
     margin-bottom: 45px;
     width: 300px;
     margin-right: 0;
+    margin-top: 10px;
 }
 
 .slides-switches {
@@ -704,6 +705,7 @@ a {
     -webkit-box-pack: justify;
     -ms-flex-pack: justify;
     justify-content: flex-start;
+    -ms-flex-wrap: wrap;
     flex-wrap: wrap;
 }
 
@@ -881,7 +883,6 @@ a {
     padding-bottom: 151px;
     margin-left: 120px;
     overflow-y: auto;
-    height: 75px;
 }
 
 .services-description-slide:first-of-type::after {
@@ -936,8 +937,10 @@ a {
     -webkit-box-pack: justify;
     -ms-flex-pack: justify;
     justify-content: space-between;
-    margin: 94px auto;
+    margin-top: 165px;
+    -ms-flex-wrap: wrap;
     flex-wrap: wrap;
+    margin-bottom: 100px;
 }
 
 
@@ -1019,7 +1022,7 @@ a {
 }
 
 .contacts img {
-    margin-bottom: 60px;
+    margin-bottom: 70px;
 }
 
 .contacts.device-button {
@@ -1061,7 +1064,7 @@ a {
 }
 
 .footer-navigation {
-    margin-top: 55px;
+    margin-top: 60px;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -1160,6 +1163,7 @@ a {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    -ms-flex-wrap: wrap;
     flex-wrap: wrap;
     -webkit-box-pack: justify;
     -ms-flex-pack: justify;
@@ -1226,8 +1230,10 @@ a {
     display: -ms-flexbox;
     display: flex;
     padding-left: 10px;
+    -ms-flex-wrap: wrap;
     flex-wrap: wrap;
     width: 180px;
+    margin-left: 25px;
 }
 
 .social-buttons a {
@@ -1361,7 +1367,6 @@ a {
 }
 
 .filter {
-    background-color: #efefef;
     -ms-flex-preferred-size: 30%;
     flex-basis: 30%;
     display: -webkit-box;
@@ -1374,6 +1379,7 @@ a {
     -webkit-box-align: center;
     -ms-flex-align: center;
     align-items: center;
+    position: relative;
 }
 
 .filters legend {
@@ -1556,7 +1562,7 @@ a {
 }
 
 .buttons-to {
-    left: 211px;
+    left: 210px;
 }
 
 .filter-buttons:active::before {
@@ -1584,19 +1590,32 @@ a {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    height: 70px;
+    width: 1400px;
+    margin: auto;
+    padding: 0px 20px;
+}
+
+.sorting-wrapper {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin: auto;
+    background-image: -webkit-gradient(linear, left top, right top, from(#dcdcdc), color-stop(50%, #dcdcdc), color-stop(50%, #ebebeb), to(#ebebeb));
+    background-image: -webkit-linear-gradient(left, #dcdcdc, #dcdcdc 50%, #ebebeb 50%, #ebebeb);
+    background-image: -o-linear-gradient(left, #dcdcdc, #dcdcdc 50%, #ebebeb 50%, #ebebeb);
+    background-image: linear-gradient(to right, #dcdcdc, #dcdcdc 50%, #ebebeb 50%, #ebebeb);
 }
 
 .filter-wrap {
     -ms-flex-preferred-size: 30%;
     flex-basis: 30%;
-    background-color: #DCDCDC;
 }
 
 .filter-header-wrap {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    padding: 20px 0px;
     -webkit-box-pack: start;
     -ms-flex-pack: start;
     justify-content: flex-start;
@@ -1626,9 +1645,8 @@ a {
 
 .sorting-wrap {
     -ms-flex-preferred-size: 70%;
-    flex-basis: 70%;
+    flex-basis: 72%;
     background-color: #ECECEC;
-    padding-left: 80px;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -1636,11 +1654,12 @@ a {
     -webkit-box-direction: normal;
     -ms-flex-direction: row;
     flex-direction: row;
+    padding-left: 80px;
 }
 
 .sorting-wrap h2 {
     display: block;
-    margin: auto 0px;
+    margin-top: 20px;
 }
 
 .sorting-navigation {
@@ -1648,11 +1667,16 @@ a {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    -ms-flex-wrap: wrap;
     flex-wrap: wrap;
     padding-left: 50px;
-    margin-top: auto;
+    margin-top: 20px;
     margin-bottom: 25px;
     max-width: 440px;
+}
+
+.sorting-navigation li:not(:first-child) {
+    opacity: 0.3;
 }
 
 .sorting-navigation li:not(:last-child) {
@@ -1693,10 +1717,6 @@ a {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-}
-
-.catalog {
-    padding-left: 35px;
 }
 
 .catalog-item {
@@ -1850,7 +1870,7 @@ div.catalog-buttons:hover {
 }
 
 .pagination-list li:not(:last-child) {
-    padding-right: 30px;
+    padding-right: 20px;
 }
 
 .pagination-back {
@@ -1874,6 +1894,17 @@ div.catalog-buttons:hover {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    background-image: -webkit-gradient(linear, left top, right top, from(#efefef), color-stop(50%, #efefef), color-stop(50%, #fff), to(#fff));
+    background-image: -webkit-linear-gradient(left, #efefef, #efefef 50%, #fff 50%, #fff);
+    background-image: -o-linear-gradient(left, #efefef, #efefef 50%, #fff 50%, #fff);
+    background-image: linear-gradient(to right, #efefef, #efefef 50%, #fff 50%, #fff);
+}
+
+.main-container-wrap {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin: auto;
 }
 
 .catalog-list {
@@ -1886,6 +1917,7 @@ div.catalog-buttons:hover {
     margin: 0;
     padding: 0;
     margin-top: 70px;
+    margin-left: 25px
 }
 
 .catalog-desc-wrap {
@@ -1922,7 +1954,7 @@ div.catalog-buttons:hover {
     flex-direction: column;
     -ms-flex-preferred-size: 70%;
     flex-basis: 70%;
-    margin-bottom: 77px;
+    background-color: #fff;
 }
 
 
@@ -2166,6 +2198,10 @@ div.catalog-buttons:hover {
     right: 30px;
 }
 
+.catalog {
+    margin-bottom: 77px;
+}
+
 
 /* modal feedback */
 
@@ -2187,7 +2223,9 @@ div.catalog-buttons:hover {
     margin: auto;
     background-color: #ffffff;
     z-index: 3;
+    -webkit-animation-name: bounce;
     animation-name: bounce;
+    -webkit-animation-duration: 0.6s;
     animation-duration: 0.6s;
 }
 
@@ -2253,8 +2291,6 @@ div.catalog-buttons:hover {
 .email-feedback [type="email"] {
     width: 360px;
     height: 50px;
-    -webkit-box-shadow: 0px 10px 20px 0 rgba(4, 6, 6, 0.2);
-    box-shadow: 0px 10px 20px 0 rgba(4, 6, 6, 0.2);
     border: 2px solid transparent;
     background-color: #e5e5e5;
     opacity: 0.5;
@@ -2275,8 +2311,6 @@ div.catalog-buttons:hover {
 .textarea-feedback textarea {
     width: 760px;
     height: 156px;
-    -webkit-box-shadow: 0px 10px 20px 0 rgba(4, 6, 6, 0.2);
-    box-shadow: 0px 10px 20px 0 rgba(4, 6, 6, 0.2);
     background-color: #e5e5e5;
     opacity: 0.5;
     border: 2px solid transparent;
@@ -2427,24 +2461,48 @@ div.catalog-buttons:hover {
     outline: 3px solid lightblue;
 }
 
-@keyframes bounce {
+@-webkit-keyframes bounce {
     0% {
+        -webkit-transform: translateY(-2000px);
         transform: translateY(-2000px);
     }
     70% {
+        -webkit-transform: translateY(30px);
         transform: translateY(30px);
     }
     90% {
+        -webkit-transform: translateY(-10px);
         transform: translateY(-10px);
     }
     100% {
+        -webkit-transform: translateY(0);
         transform: translateY(0);
     }
 }
 
-@keyframes shake {
+@keyframes bounce {
+    0% {
+        -webkit-transform: translateY(-2000px);
+        transform: translateY(-2000px);
+    }
+    70% {
+        -webkit-transform: translateY(30px);
+        transform: translateY(30px);
+    }
+    90% {
+        -webkit-transform: translateY(-10px);
+        transform: translateY(-10px);
+    }
+    100% {
+        -webkit-transform: translateY(0);
+        transform: translateY(0);
+    }
+}
+
+@-webkit-keyframes shake {
     0%,
     100% {
+        -webkit-transform: translateX(0);
         transform: translateX(0);
     }
     10%,
@@ -2452,17 +2510,44 @@ div.catalog-buttons:hover {
     50%,
     70%,
     90% {
+        -webkit-transform: translateX(-10px);
         transform: translateX(-10px);
     }
     20%,
     40%,
     60%,
     80% {
+        -webkit-transform: translateX(10px);
+        transform: translateX(10px);
+    }
+}
+
+@keyframes shake {
+    0%,
+    100% {
+        -webkit-transform: translateX(0);
+        transform: translateX(0);
+    }
+    10%,
+    30%,
+    50%,
+    70%,
+    90% {
+        -webkit-transform: translateX(-10px);
+        transform: translateX(-10px);
+    }
+    20%,
+    40%,
+    60%,
+    80% {
+        -webkit-transform: translateX(10px);
         transform: translateX(10px);
     }
 }
 
 .modal-error {
+    -webkit-animation-name: shake;
     animation-name: shake;
+    -webkit-animation-duration: 0.6s;
     animation-duration: 0.6s;
 }
