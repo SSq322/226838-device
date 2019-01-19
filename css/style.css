@@ -29,6 +29,7 @@ body {
     color: #000000;
     text-align: left;
     font-family: Gilroy-ExtraBold, "Arial", sans-serif;
+    min-width: 1200px;
 }
 
 a {
@@ -604,7 +605,7 @@ a {
     line-height: 56px;
     font-size: 48px;
     letter-spacing: 0.48px;
-    margin-bottom: 15px;
+    margin-bottom: 25px;
     margin-top: 35px;
 }
 
@@ -619,7 +620,7 @@ a {
 
 .featured-description-1 {
     max-width: 480px;
-    padding-bottom: 45px;
+    padding-bottom: 35px;
 }
 
 .featured-description-2 {
@@ -884,7 +885,8 @@ a {
     margin: 0;
     padding-bottom: 151px;
     margin-left: 120px;
-    overflow-y: auto;
+    overflow-y: scroll;
+    height: 70px;
 }
 
 .services-description-slide:first-of-type::after {
@@ -930,6 +932,7 @@ a {
     max-width: 1160px;
     margin: auto;
     padding-bottom: 40px;
+    margin-top: 164px;
 }
 
 .companies-list {
@@ -939,7 +942,6 @@ a {
     -webkit-box-pack: justify;
     -ms-flex-pack: justify;
     justify-content: space-between;
-    margin-top: 90px;
     -ms-flex-wrap: wrap;
     flex-wrap: wrap;
     margin-bottom: 100px;
@@ -949,13 +951,13 @@ a {
 /* about us  and contacts */
 
 .about-us-contacts-container {
-    max-width: 1160px;
+    max-width: 1200px;
     margin: auto;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
     width: 100%;
-    margin-bottom: 80px;
+    margin-bottom: 88px;
 }
 
 .about-us {
@@ -963,6 +965,7 @@ a {
     -ms-flex: 1;
     flex: 1;
     position: relative;
+    margin-left: 10px;
 }
 
 .about-us::before {
@@ -990,6 +993,10 @@ a {
     top: -50px;
 }
 
+.contacts a:last-of-type {
+    margin-left: 30px;
+}
+
 .about-us h2,
 .contacts h2 {
     font-size: 47.5px;
@@ -1005,7 +1012,7 @@ a {
 }
 
 .about-us p:nth-of-type(2) {
-    margin-bottom: 65px;
+    margin-bottom: 63px;
 }
 
 .about-us p,
@@ -1062,7 +1069,7 @@ a {
 }
 
 .footer-navigation {
-    margin-top: 70px;
+    margin-top: 60px;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -1180,7 +1187,7 @@ a {
 }
 
 .footer-contacts li:nth-child(2) {
-    padding-left: 30px;
+    padding-left: 35px;
 }
 
 .footer-contacts li:nth-child(3) {
@@ -1315,6 +1322,11 @@ a {
 
 .footer-navigation-logo:focus {
     opacity: 0.4;
+}
+
+.footer-navigation-logo-1 {
+    padding-top: 5px;
+    padding-right: 5px;
 }
 
 
@@ -1651,7 +1663,7 @@ a {
     -webkit-box-direction: normal;
     -ms-flex-direction: row;
     flex-direction: row;
-    padding-left: 80px;
+    padding-left: 74px;
 }
 
 .sorting-wrap h2 {
@@ -1672,10 +1684,6 @@ a {
     max-width: 440px;
 }
 
-.sorting-navigation li:not(:first-child) {
-    opacity: 0.3;
-}
-
 .sorting-navigation li:not(:last-child) {
     margin-right: 30px;
 }
@@ -1684,32 +1692,25 @@ a {
     margin: auto;
 }
 
-.sorting-nav-button,
-.top-bottom-pagination a {
+.sorting-nav-button {
     font-family: "Open Sans", "Arial", sans-serif;
     font-size: 14px;
     line-height: 1.25;
     color: #000000;
-}
-
-.active {
-    color: #000000;
-    opacity: 1;
+    opacity: 0.3;
 }
 
 .sorting-nav-button:hover {
-    color: #000000;
     opacity: 0.6;
 }
 
 .sorting-nav-button:active {
-    color: #000000;
     opacity: 1;
 }
 
 .top-bottom-pagination {
     list-style-type: none;
-    padding-left: 150px;
+    padding-left: 160px;
     margin: auto;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -1945,6 +1946,10 @@ div.catalog-buttons:hover {
     color: #464646;
 }
 
+.catalog-item-header {
+    max-width: 260px;
+}
+
 .catalog-filling-wrap {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -2125,6 +2130,12 @@ div.catalog-buttons:hover {
 
 .top-pagination,
 .bottom-pagination {
+    color: #000000;
+    opacity: 0.2;
+}
+
+.top-pagination,
+.bottom-pagination {
     position: relative;
 }
 
@@ -2143,7 +2154,6 @@ div.catalog-buttons:hover {
     position: absolute;
     background-repeat: no-repeat;
     top: -4px;
-    opacity: 0.2;
 }
 
 .top-pagination:hover,
@@ -2167,7 +2177,6 @@ div.catalog-buttons:hover {
     background-repeat: no-repeat;
     top: -4px;
     left: 25px;
-    ;
 }
 
 .footer-social-border {
@@ -2423,10 +2432,6 @@ div.catalog-buttons:hover {
     flex-direction: column;
 }
 
-.advances-current:active {
-    background-color: #000000;
-}
-
 .slides-btn {
     background-color: transparent;
     border: none;
@@ -2456,6 +2461,14 @@ div.catalog-buttons:hover {
 }
 
 .pagination-item-current a {
+    opacity: 1;
+}
+
+.pagination-item a:hover {
+    opacity: 0.6;
+}
+
+.pagination-item a:active {
     opacity: 1;
 }
 
@@ -2558,4 +2571,8 @@ div.catalog-buttons:hover {
     animation-name: shake;
     -webkit-animation-duration: 0.6s;
     animation-duration: 0.6s;
+}
+
+.active {
+    opacity: 1;
 }
